@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vid.css">
+    <link href="https://vjs.zencdn.net/7.18.1/video-js.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <title>Merge</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="display-1 text-center">Merge Videos</h1>
+    </div>
+
+    <div class="container">
+        <div class="shadow p-2 mb-2 mt-2 bg-primary rounded"><p style="font-size: 25px; color: white;" class="dip">
+        Site is based on the merge function which merges two videos in such a way that as the first
+        video reaches half of its duration it pauses, causing the second video to play as an 'advertisement'
+        which can't be skipped or can be controlled whatsoever. When the "advertisement" ends the video resumes.
+
+
+        </p></div>
+    </div>
+    <div class="container py-3 ">
+
+       <div class="row px-2 py-2">
+           <div class="col-12 " id="main_vid">
+               <video id="myvid"  class="video-js vjs-default-skin vjs-big-play-centered   " style="width: 1200px; height: 700px; display: block;"   controls   data-setup="{}">  
+                <source id="vidch"  src="./pexels-creativ-medium-7529127.mp4" type="video/mp4" > 
+            </video>
+            </div>
+            <div class="col-12" id="advid" hidden>
+                <video id="ad" class="video-js vjs-default-skin py-5"   preload data-setup="{}"   >
+                    <source  src="./pexels-george-morina-5644216.mp4"  type="video/mp4"  > 
+            </video>
+
+           </div>
+       </div>
+
+    </div>
+        
+
+
+        <!-- <div class="container  py-3"> -->
+    
+
+        <!-- </div> -->
+
+
+
+
+
+
+    <script src="https://vjs.zencdn.net/7.18.1/video.min.js"></script>
+    <script src="vid.js"></script>
+</body>
+</html>
